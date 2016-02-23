@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Parse.initializeWithConfiguration(
@@ -24,6 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://gentle-earth-55669.herokuapp.com/parse"
             })
         )
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if PFUser.currentUser() != nil {
+            // Go to logged in screen
+            print("current user detected: \(PFUser.currentUser()?.username)")
+            let vc = storyboard.instantiateViewControllerWithIdentifier("HomeViewController")
+            window?.rootViewController = vc
+        }
         
         return true
     }
