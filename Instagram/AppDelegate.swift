@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if PFUser.currentUser() != nil {
             // Go to logged in screen
             print("current user detected: \(PFUser.currentUser()?.username)")
-            let vc = storyboard.instantiateViewControllerWithIdentifier("HomeViewController")
+            let vc = storyboard.instantiateViewControllerWithIdentifier("TBCtrl")
             window?.rootViewController = vc
         }
         
