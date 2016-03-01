@@ -31,8 +31,8 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. Working with time-stamps and NSDate
+2. Taking the keyboard into account with design
 
 ## Video Walkthrough 
 
@@ -44,7 +44,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It took me awhile to figure out how to communicate between view controllers on the tab bar controller. Making the section headers was a challenge, as well.
 
 ## License
 
